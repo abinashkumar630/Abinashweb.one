@@ -1,0 +1,19 @@
+.popup {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s, visibility 0.5s;
+}
+
+.popup.show {
+    visibility: visible;
+    bottom: 30px;
+}
