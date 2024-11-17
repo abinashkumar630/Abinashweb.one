@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent; /* Transparent background */
+}
+
+.effect-wrapper {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem; /* Increased font size for h1 */
+}
+
+#typed {
+    font-weight: bold;
+    color: #00bdff;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: #b0ff95;
+    animation: blinker 900ms infinite;
+}
+
+.cursor.typing-true {
+    animation: none;
+}
+
+@keyframes blinker {
+    0% { background-color: #00aeff; }
+    50% { background-color: transparent; }
+    100% { background-color: #00aeff; }
+}
